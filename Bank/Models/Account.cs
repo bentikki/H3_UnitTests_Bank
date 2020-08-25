@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bank
 {
-    class Account
+    public class Account
     {
         public string Name { get; private set; }
         public IUser OwnedBy { get; private set; }
-        public decimal Balance { get; private set; }
+        public decimal Balance { get; set; }
 
         public Account(string name, IUser ownedBy, decimal balance)
         {

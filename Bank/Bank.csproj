@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\StaticRandom.cs" />
     <Compile Include="DAL\UserDAL.cs" />
-    <Compile Include="Handlers\BankHandler.cs" />
+    <Compile Include="BankHandler.cs" />
+    <Compile Include="UserHandler.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\IUser.cs" />
     <Compile Include="Models\User.cs" />

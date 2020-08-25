@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Bank.DAL
 {
     class UserDAL
     {
-        private List<IUser> users;
+        private List<IUser> users = new List<IUser>();
 
         public UserDAL()
         {
@@ -20,8 +21,6 @@ namespace Bank.DAL
 
             foreach (IUser user in userList)
             {
-
-                user.AddAccount("Main Account");
                 this.users.Add(user);
             }
 

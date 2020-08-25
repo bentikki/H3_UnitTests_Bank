@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bank
 {
-    interface IUser
+    public interface IUser
     {
         string Pin { get; }
-        List<Account> Accounts{ get; }
+        Account Account{ get; }
 
-        void AddAccount(string name);
     }
 }
